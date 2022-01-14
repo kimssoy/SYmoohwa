@@ -63,7 +63,7 @@
     #container>article:first-child>img{height:530px; padding-top:0px;}
     #container>article>img._m{
         display:block;
-        padding:30px;
+        padding:30px 50px;
     }
     #container>article:nth-child(2)>img,
     #container>article:nth-child(3)>img,
