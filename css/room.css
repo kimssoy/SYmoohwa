@@ -58,16 +58,20 @@
 /*브라우저의 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
     #container>article{height:500px;}
-    #container>article:first-child{height:600px;}
+    #container>#Atype{padding-top:100px; height:630px;}
     #container>article>img{height:500px;}
-    #container>article:first-child>img{padding-top:0px;}
+    #container>article:first-child>img{height:530px; padding-top:0px;}
     #container>article>img._m{
         display:block;
         padding:30px;
     }
-    #container>#Atype{padding-top:100px;}
     #container>article:nth-child(2)>img,
     #container>article:nth-child(3)>img,
     #container>article:nth-child(4)>img{padding-top:0;}
     #container>article>img._3{display:none;}
+
+    #container>article>a{
+        top:45%;
+        font-size:20px;
+    }
 }
