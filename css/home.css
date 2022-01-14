@@ -143,7 +143,7 @@ hr{
     margin-bottom:0;
 }
 .contents2>.btn{
-    max-width:1180px;
+    max-width:1160px;
     height:50px;
     margin:auto;
     position:relative;
@@ -157,8 +157,8 @@ hr{
     font-size:12px;
     font-weight:bold;
     float:right;
-    margin-top:-57px;
-    margin-right:20px;
+    margin-top:-62px;
+    margin-right:10px;
 }
 .contents2>.btn>a:hover{
     outline:none;
@@ -450,8 +450,8 @@ hr{
     }
     .contents2>.btn>a{
         width:85px;
-        font-size:10px;
-        margin-top:-53px;
+        font-size:11px;
+        margin-top:-58px;
     }
     .blank{height:30px;}
     #slideWrap>a{display:none;}
@@ -574,7 +574,7 @@ hr{
         width:70px;
         padding:6px 0;
         margin:10px 10px 10px 0px;
-        border-radius:8px;
+        font-size:10px;
     }
     #direct{
         max-height:200px;
