@@ -10,6 +10,8 @@
     display:block;
     padding:20px 0;
 }
+#container>article>img._1{display:block;}
+#container>article>img._2{display:none;}
 #container>article:first-child>img{padding-top:100px;}
 #container>article>a{
     position:absolute;
@@ -17,13 +19,48 @@
     left:50%;
     transform:translate(-50%,-50%);
     font-family:'Permanent Marker';
-    font-size:40px;
-    color:#666;
+    font-size:30px;
+    color:#003333;
     background-color:rgba(255,255,255,0.5);
-    padding:0px 20px 10px;
+    padding:20px 40px;
     border-radius:10px;
+}
+#container>article>a:hover{
+    transition:all 0.5s;
+    background-color:#f1f1f1;
 }
 
 #container>article:first-child>a{
-    top:54%;
+    top:55%;
+}
+/*===============*/
+
+/*브라우저의 넓이가 980px 이하 일 때*/
+@media screen and (max-width:980px){
+    #container>article>img._2{display:block;}
+    #container>article>img._1{display:none;}
+    #container>article>a{
+        padding:15px 30px;
+        font-size:25px;
+    }
+}
+
+/*브라우저의 넓이가 768px 이하 일 때*/
+@media screen and (max-width:768px){
+    #container>article>img._3{display:block;}
+    #container>article>img._2{display:none;}
+    #container>article>a{
+        padding:15px 30px;
+        font-size:25px;
+    }
+}
+
+/*브라우저의 넓이가 480px 이하 일 때*/
+@media screen and (max-width:480px){
+    #container>article>img._m{
+        display:block;
+        padding:40px;
+    }
+    #container>article:first-child>img{padding-top:100px;}
+    #container>article>img._3{display:none;}
 }
