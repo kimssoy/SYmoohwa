@@ -156,15 +156,9 @@ header>.nav{
 
 /*브라우저의 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
-    .toggle{font-size:25px; top:11px;}
     #top{
         right:20px;
         font-size:30px;
         padding:5px 8px 3px 8px;
     }
-    .logo>a{font-size:16px; line-height:60px;}
-    .gnb{font-size:14px;}
-    .gnb>li>a{line-height:60px;}
-    .sub{font-size:12px;}
-    .sub>li>a{line-height:50px;}
 }

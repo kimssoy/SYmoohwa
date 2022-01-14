@@ -33,7 +33,11 @@ $(function(){
             $(".gnb").css("display","flex");
         }else{
             $(".gnb").css("display","none");
+            $(".gnb>li>a").click(function(e){
+                e.preventDefault();
+            });
         }
     });
+    $(window).trigger("resize");
 });
 
