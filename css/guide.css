@@ -280,6 +280,11 @@ section{
         left:65px;
         font-size:16px;
         line-height:40px;
+        text-decoration:underline;
+        text-underline-offset:2px;
+        text-decoration-thickness:2px;
+        text-decoration-color:#e89973;
+        text-decoration-style:wavy;
     }
     #guide_2 .box>p{
         font-size:15px;

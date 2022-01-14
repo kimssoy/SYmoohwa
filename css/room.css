@@ -10,14 +10,18 @@
     display:block;
     padding:20px 0;
 }
-#container>article:first-child>img{padding-top:80px;}
+#container>article:first-child>img{padding-top:100px;}
 #container>article>a{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
     font-family:'Permanent Marker';
-    font-size:50px;
+    font-size:40px;
+    color:#666;
+    background-color:rgba(255,255,255,0.5);
+    padding:0px 20px 10px;
+    border-radius:10px;
 }
 
 #container>article:first-child>a{

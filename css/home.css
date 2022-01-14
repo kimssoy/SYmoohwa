@@ -151,12 +151,11 @@ hr{
 .contents2>.btn>a{
     display:block;
     width:90px;
-    height:30px;
-    outline:2px solid #999;
+    border:2px solid #999;
     border-radius:10px;
-    line-height:30px;
-    font-family:'Permanent Marker';
-    font-size:15px;
+    padding:10px 0;
+    font-size:12px;
+    font-weight:bold;
     float:right;
     margin-top:-57px;
     margin-right:20px;
@@ -451,7 +450,7 @@ hr{
     }
     .contents2>.btn>a{
         width:85px;
-        font-size:12px;
+        font-size:10px;
         margin-top:-53px;
     }
     .blank{height:30px;}
@@ -573,10 +572,8 @@ hr{
     }
     .contents2>.btn>a{
         width:70px;
-        height:20px;
-        font-size:11px;
+        padding:6px 0;
         margin:10px 10px 10px 0px;
-        line-height:20px;
         border-radius:8px;
     }
     #direct{
