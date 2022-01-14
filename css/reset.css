@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Permanent+Marker&display=swap');
+
+*{margin:0; padding:0; box-sizing:border-box;}
+a{text-decoration:none; color:inherit;}
+ul{list-style:none;}
+
+body{
+    font-family:'Noto Serif KR','Permanent Marker',serif;
+    letter-spacing:2px;
+    color:#333;
+}

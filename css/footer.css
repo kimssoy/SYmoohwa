@@ -1,0 +1,62 @@
+footer{
+    width:100%;
+    height:210px;
+    text-align:center;
+    background-color:#eaebed;
+    color:#666;
+    user-select:none;
+}
+footer p{
+    display:inline-block;
+    font-size:12px;
+    margin:5px 0;
+}
+footer span{
+    font-size:13px;
+}
+footer p:nth-child(1){margin-top:45px;}
+footer p:nth-child(2){margin-left:40px;}
+footer p:nth-child(7){margin-left:40px;}
+footer p:last-child{margin-top:30px; font-size:11px;}
+
+
+footer a:hover{
+    text-decoration:underline;
+    color:#f1394e;
+    transition:all 0.3s;
+}
+/*=========================*/
+
+/*브라우저의 넓이가 768px 이하 일 때*/
+@media screen and (max-width:768px){
+    footer p{font-size:11px;}
+    footer span{font-size:12px;}
+    footer p:nth-child(2){margin-left:20px;}
+    footer p:nth-child(7){margin-left:20px;}
+    footer p:last-child{font-size:10px;}
+}
+/*브라우저의 넓이가 579px 이하 일 때*/
+@media screen and (max-width:579px){
+    footer p:nth-child(1){margin-top:32px;}
+}
+/*브라우저의 넓이가 480px 이하 일 때*/
+@media screen and (max-width:480px){
+    footer{height:150px;}
+    footer p{font-size:10px;}
+    footer span{font-size:11px;}
+    footer p:nth-child(1){margin-top:28px;}
+    footer p:nth-child(2){margin-left:5px;}
+    footer p:nth-child(7){margin-left:0;}
+    footer p:last-child{display:none;}
+}
+/*브라우저의 넓이가 335px 이하 일 때*/
+@media screen and (max-width:335px){
+    footer p:nth-child(1){margin-top:15px;}
+}
+/*브라우저의 넓이가 330px 이하 일 때*/
+@media screen and (max-width:330px){
+    footer p:nth-child(1){margin-top:30px;}
+    footer p:nth-child(2){margin-left:5px;}
+    footer p:nth-child(4){display:none;}
+    footer p:nth-child(6){display:none;}
+}

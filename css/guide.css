@@ -1,0 +1,309 @@
+hr{
+    height:4px;
+    border:0px;
+    background-color:#f0f0f0;
+}
+h2{
+    font-family:'Permanent Marker';
+    font-size:30px;
+    font-weight:normal;
+    color:#003333;
+}
+section{
+    width:100%;
+    height:auto;
+    text-align:center;
+    margin:auto;
+    user-select:none;
+}
+
+#guide_1{width:100%;}
+#guide_1>.textWrap>h2{
+    padding:180px 0 50px 0;
+}
+#guide_1>.textWrap>p:nth-child(2){
+    line-height:32px;
+    padding-bottom:40px;
+}
+#guide_1>.textWrap>h3{
+    font-size:16px;
+    font-weight:500;
+    padding-bottom:30px;
+    line-height:28px;
+}
+#guide_1>.textWrap>h3>span{
+    text-decoration:underline;
+    text-decoration-color:#ccc;
+    text-decoration-thickness:2px;
+    text-decoration-skip-ink:none;
+    text-underline-offset:3px;
+}
+#guide_1>.textWrap>p:nth-child(4){
+    font-size:14px;
+    line-height:24px;
+    padding-bottom:100px;
+}
+#guide_1>.textWrap>p:nth-child(4)>span{
+    color:#e89973;
+}
+
+/*====================*/
+#guide_2>h2{
+    padding:80px 0 50px 0;
+}
+#guide_2>.sliderWrap{
+    width:728px;
+    height:680px;
+    margin:auto;
+    overflow:hidden;
+}
+#guide_2 .contentWrap{
+    width:1484px;
+    height:640px;
+    position:relative;
+}
+#guide_2 .box{
+    width:350px;
+    height:640px;
+    background-color:#f1f1f1;
+    float:left;
+    margin-right:28px;
+    position:relative;
+}
+#guide_2 .box:last-child{margin:0;}
+#guide_2 .box>h3{
+    width:200px;
+    height:70px;
+    outline:1px solid #333;
+    position:absolute;
+    bottom:26%;
+    left:75px;
+    background-color:#ffffff;
+    font-family:'Permanent Marker';
+    font-size:24px;
+    font-weight:normal;
+    line-height:70px;
+}
+#guide_2 .box>p{
+    font-size:18px;
+    padding-top:55px;
+}
+#guide_2 .box>p>span{font-size:14px;}
+#guide_2 .box>p:last-child{font-size:16px; padding-top:20px;}
+#guide_2 .scrollBar{
+    width:728px;
+    height:40px;
+    background-color:#e89973;
+}
+#guide_2 #bar{
+    width:160px;
+    height:40px;
+    line-height:40px;
+    cursor:pointer;
+    color:#f1f1f1;
+}
+#guide_2 #bar:hover{color:#333; transition:all 0.5s;}
+#guide_2 .box>a:hover{
+    filter:grayscale(100%) brightness(90%);
+    transition:all 1s;
+}
+#guide_2 .box>a:hover+h3{
+    text-decoration:underline;
+    text-underline-offset:6px;
+    text-decoration-thickness:2px;
+    text-decoration-color:#e89973;
+    text-decoration-style:wavy;
+    transition:all 0.5s;
+}
+#guide_2>.textWrap_2>i{
+    font-size:50px;
+    color:#ffd200;
+    padding:40px 0 30px 0;
+}
+#guide_2>.textWrap_2>p{
+    line-height:28px;
+    padding-bottom:80px;
+}
+#guide_2>.textWrap_2>p>span{color:#e89973;}
+/*================*/
+#guide_3>h2{padding-bottom:40px;}
+#guide_3>h2:first-child{
+    padding:80px 0 40px 0;
+}
+#guide_3>p{
+    line-height:28px;
+}
+#guide_3 p span{color:#e89973;}
+#guide_3>p:not(:last-child){
+    padding-bottom:60px;
+}
+#guide_3>p:last-child{
+    padding-bottom:80px;
+}
+/*========================*/
+
+/*브라우저의 넓이가 768px 이하 일 때*/
+@media screen and (max-width:768px){
+    h2{
+        font-size:25px;
+    }
+
+    #guide_1>.textWrap>h2{
+        padding:160px 0 50px 0;
+    }
+    #guide_1>.textWrap>p{
+        font-size:14px;
+    } 
+
+    #guide_1>.textWrap>h3{
+        font-size:14px;
+        line-height:24px;
+    }
+    #guide_1>.textWrap>p:nth-child(4){
+        font-size:12px;
+        padding-bottom:80px;
+    }
+
+    #guide_2>.textWrap_2>p{font-size:14px;}
+    #guide_2>.textWrap_2>i{
+        font-size:40px;
+        padding:40px 0 20px 0;
+    }
+    #guide_2>.sliderWrap{
+        max-width:350px;
+        height:100%;
+        margin:auto;
+    }
+    #guide_2 .contentWrap{
+        max-width:420px;
+        height:100%;
+    }
+    #guide_2 .box{
+        height:505px;
+        background-color:#f1f1f1;
+        float:left;
+        margin-right:0;
+        position:relative;
+        padding:40px;
+        border-bottom:2px solid #ccc;
+    }
+    #guide_2 .box img{width:250px; height:300px;}
+    #guide_2 .box:last-child{margin:0; border:0;}
+    #guide_2 .box>h3{
+        width:140px;
+        height:50px;
+        outline:1px solid #333;
+        position:absolute;
+        bottom:28%;
+        left:105px;
+        background-color:#ffffff;
+        font-family:'Permanent Marker';
+        font-size:18px;
+        font-weight:normal;
+        line-height:50px;
+    }
+    #guide_2 .box>p{
+        font-size:17px;
+        padding-top:36px;
+        line-height:24px;
+    }
+    #guide_2 .box>p>span{font-size:11px;}
+    #guide_2 .box>p:last-child{
+        font-size:15px;
+        padding-top:10px;
+    }
+    #guide_2 .box>a:hover+h3{
+        text-underline-offset:2px;
+    }
+    #guide_2 .scrollBar{
+        display:none;
+    }
+    
+    #guide_3>p{font-size:14px; line-height:24px;}
+}
+
+/*브라우저의 넓이가 480px 이하 일 때*/
+@media screen and (max-width:480px){
+    h2{font-size:20px; text-align:center;}
+    #guide_1>.textWrap{
+        padding:0 40px;
+        text-align:left;
+    }
+    #guide_1>.textWrap>h2{
+        padding:100px 0 30px 0;
+    }
+    #guide_1>.textWrap>p{font-size:13px;}
+    #guide_1>.textWrap>p:nth-child(2){
+        padding-bottom:20px;
+    }
+    #guide_1>.textWrap>p:nth-child(4){
+        padding-bottom:40px;
+    }
+    #guide_1>.textWrap>h3{
+        font-size:13px;
+        padding-bottom:20px;
+    }
+    #guide_2>h2{
+        padding:50px 0 40px 0;
+    }
+    #guide_2>.textWrap_2{padding:0 40px;}
+    #guide_2>.textWrap_2>i{padding:30px 0 20px 0;}
+    #guide_2>.textWrap_2>p{
+        padding-bottom:50px;
+        font-size:12px;
+        text-align:left;
+    }
+    #guide_2>.sliderWrap{
+        max-width:250px;
+        height:100%;
+        margin:auto;
+    }
+    #guide_2 .contentWrap{
+        max-width:250px;
+        height:100%;
+    }
+    #guide_2 .box{
+        width:250px;
+        height:450px;
+        background-color:#f1f1f1;
+        float:left;
+        margin-right:0;
+        position:relative;
+        padding:20px;
+        border-bottom:2px solid #ccc;
+    }
+    #guide_2 .box img{width:210px; height:250px;}
+    #guide_2 .box>h3{
+        width:120px;
+        height:40px;
+        bottom:35%;
+        left:65px;
+        font-size:16px;
+        line-height:40px;
+    }
+    #guide_2 .box>p{
+        font-size:15px;
+        padding-top:36px;
+        line-height:24px;
+    }
+    #guide_2 .box>p>span{font-size:11px;}
+    #guide_2 .box>p:last-child{
+        font-size:13px;
+        padding-top:10px;
+    }
+
+    #guide_3>h2:first-child{
+        padding:50px 0 40px 0;
+    }
+    #guide_3>p{
+        font-size:12px;
+        padding:0 40px;
+        text-align:left;
+    }
+    #guide_3>p:not(:last-child){
+        padding-bottom:50px;
+    }
+    #guide_3>p:last-child{
+        padding-bottom:50px;
+    }
+}
