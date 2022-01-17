@@ -7,6 +7,9 @@
     <link rel="icon" href="favicon.ico">
     <!--폰트어썸-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--와우플러그인-->
+    <link href="wow/animate.css" rel="stylesheet">
+
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
@@ -76,7 +79,7 @@
     <section id="contents">
         <div class="contents1">
             <div class="title">
-                <h2>STUDIO MOOHWA</h2>
+                <h2 class="wow bounceInRight" >STUDIO MOOHWA</h2>
                 <hr>
             </div>
             <div class="content1">
@@ -97,7 +100,7 @@
 
         <div class="contents2">
             <div class="title">
-                <h2>PHOTO IN MOOHWA</h2>
+                <h2 class="wow bounceInLeft" data-wow-offset="400">PHOTO IN MOOHWA</h2>
                 <hr>
             </div>
             <div class="btn">
@@ -135,7 +138,7 @@
             <a href="https://www.instagram.com/p/CW44OCEpJc6/?utm_source=ig_web_copy_link" target="_blank"><img src="images/i4.png" alt="i4"><p><i class="fas fa-heart"></i>9<i class="fas fa-comments"></i>2</p></a>
         </div>
         <div class="title">
-            <h1>FOLLOW<br><span>INSTAGRAM</span>&hearts;</h1>
+            <h1 class="wow swing" data-wow-offset="300">FOLLOW<br><span>INSTAGRAM</span>&hearts;</h1>
         </div>
         <div class="text">
             <h2>인스타그램 바로가기<i class="fas fa-sort-down"></i></h2>
@@ -153,6 +156,11 @@
         <p>E-mail. <span><a href="#">moohwa1@naver.com</a></span></p><br>
         <p>Copyright&copy; 2018 STUDIO MOOHWA. All Rights Reverved.</p>
     </footer>
+
+    <script src="wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
