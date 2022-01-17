@@ -445,13 +445,14 @@ hr{
     }
     .content2>.box:nth-child(1){margin-bottom:60px;}
     .contents2>.btn{
-        max-width:600px;
+        max-width:530px;
         height:40px;
     }
     .contents2>.btn>a{
         width:85px;
         font-size:11px;
-        margin-top:-58px;
+        margin-top:-57px;
+        padding:8px 0;
     }
     .blank{height:30px;}
     #slideWrap>a{display:none;}
@@ -569,13 +570,12 @@ hr{
     .contents2 .box>h3{font-size:10px; margin-top:10px;}
     .contents2>.btn{
         max-width:300px;
-        margin:0;
-        margin-left:78px;
+        height:50px;
     }
     .contents2>.btn>a{
         width:70px;
         padding:6px 0;
-        margin:10px 10px 10px 0px;
+        margin:9px 10px 0px 0px;
         font-size:10px;
     }
     #direct{
