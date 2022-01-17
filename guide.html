@@ -7,6 +7,8 @@
     <link rel="icon" href="favicon.ico">
     <!--폰트어썸-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--와우플러그인-->
+    <link href="wow/animate.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/subHeader.css" rel="stylesheet">
     <link href="css/guide.css" rel="stylesheet">
@@ -105,7 +107,7 @@
                 </div>
             </div>
             <div class="scrollBar">
-                <div id="bar">Dragg Me &gt;&gt;</div>
+                <div id="bar" class="wow bounce" data-wow-duration="1.2s" data-wow-iteration="2">Dragg Me &gt;&gt;</div>
             </div>
         </div>
         <div class="textWrap_2">
@@ -152,6 +154,11 @@
         <p>E-mail. <span><a href="#">moohwa1@naver.com</a></span></p><br>
         <p>Copyright&copy; 2018 STUDIO MOOHWA. All Rights Reverved.</p>
     </footer>
+
+    <script src="wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <script>
         const button = document.querySelector("#top");

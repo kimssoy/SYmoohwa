@@ -1,77 +1,78 @@
-#container>article{
+#container{
     width:100%;
     height:100vh;
+    user-select:none;
+}
+#type{
+    max-width:1000px;
+    margin:auto;
+    padding-top:160px;
+}
+#type>div{
+    float:left;
+    width:50%;
+    height:100%;
+    padding:20px;
     position:relative;
-    background-color:#003333;
 }
-#container>article>img{
-    width:100%;
-    height:100vh;
+#type>div img{
     display:block;
-    padding:20px 0;
+    width:100%;
 }
-#container>article>img._1{display:block;}
-#container>article>img._2{display:none;}
-#container>article:first-child>img{padding-top:100px;}
-#container>article>a{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    font-family:'Permanent Marker';
-    font-size:30px;
-    color:#003333;
-    background-color:rgba(255,255,255,0.5);
-    padding:20px 40px;
-    border-radius:10px;
-}
-#container>article>a:hover{
-    transition:all 0.5s;
-    background-color:#f1f1f1;
+#type>div img:hover{
+    filter:grayscale(100%) brightness(70%);
+    transition:all 0.8s;
 }
 
-#container>article:first-child>a{
-    top:55%;
+#type>div>a:last-child{
+    position:absolute;
+    top:20px;
+    right:40px;
+    font-size:40px;
+    font-weight:bold;
+    color:#fff;
 }
-/*===============*/
+#type>div:nth-child(3),
+#type>div:nth-child(4){margin-bottom:60px;}
+
+footer{float:left;}
+/*============*/
 
 /*브라우저의 넓이가 980px 이하 일 때*/
 @media screen and (max-width:980px){
-    #container>article>img._2{display:block;}
-    #container>article>img._1{display:none;}
-    #container>article>a{
-        padding:15px 30px;
-        font-size:25px;
-    }
+    #type>div>a:last-child{font-size:34px;}
 }
-
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
-    #container>article>img._3{display:block;}
-    #container>article>img._2{display:none;}
-    #container>article>a{
-        padding:15px 30px;
-        font-size:25px;
+    #type>div>a:last-child{
+        right:30px;
+        font-size:26px;
+    }
+    #type>div:nth-child(1),
+    #type>div:nth-child(3){padding-right:10px;}
+    #type>div:nth-child(2),
+    #type>div:nth-child(4){padding-left:10px;}
+    #type>div:nth-child(3),
+    #type>div:nth-child(4){padding-top:0px;}
+
+    #type>div:nth-child(2)>a:last-child,
+    #type>div:nth-child(4)>a:last-child{right:40px;}
+    #type>div:nth-child(3)>a:last-child,
+    #type>div:nth-child(4)>a:last-child{
+        top:0px;
     }
 }
-
 /*브라우저의 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
-    #container>article{height:500px;}
-    #container>#Atype{padding-top:100px; height:630px;}
-    #container>article>img{height:500px;}
-    #container>article:first-child>img{height:530px; padding-top:0px;}
-    #container>article>img._m{
-        display:block;
-        padding:30px 50px;
+    #container{height:100%;}
+    #type{padding-top:120px;}
+    #type>div>a:last-child{
+        top:25px;
+        right:20px;
+        font-size:18px;
     }
-    #container>article:nth-child(2)>img,
-    #container>article:nth-child(3)>img,
-    #container>article:nth-child(4)>img{padding-top:0;}
-    #container>article>img._3{display:none;}
-
-    #container>article>a{
-        top:45%;
-        font-size:20px;
-    }
+    #type>div:nth-child(3),
+    #type>div:nth-child(4){margin-bottom:30px;}
+    #type>div:nth-child(2)>a:last-child,
+    #type>div:nth-child(4)>a:last-child{right:30px;}
 }

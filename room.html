@@ -7,6 +7,9 @@
     <link rel="icon" href="favicon.ico">
     <!--폰트어썸-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--와우플러그인-->
+    <link href="wow/animate.css" rel="stylesheet">
+
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/subHeader.css" rel="stylesheet">
     <link href="css/room.css" rel="stylesheet">
@@ -49,33 +52,23 @@
     </header>
 
     <section id="container">
-        <article id="Atype">
-            <img class="_1" src="images/r-1.jpg" alt="a">
-            <img class="_2" src="images/r-1-2.jpg" alt="a">
-            <img class="_3" src="images/r-1-3.jpg" alt="a">
-            <img class="_m" src="images/r-m-1.jpg" alt="a">
-            <a href="#">A room</a>
-        </article>
-        <article id="Btype">
-            <img class="_1" src="images/r-2.jpg" alt="b">
-            <img class="_2" src="images/r-2-2.jpg" alt="b">
-            <img class="_3" src="images/r-2-3.jpg" alt="b">
-            <img class="_m" src="images/r-m-2.jpg" alt="b">
-            <a href="#">B room</a>
-        </article>
-        <article id="Ctype">
-            <img class="_1"src="images/r-3.jpg" alt="c">
-            <img class="_2" src="images/r-3-2.jpg" alt="c">
-            <img class="_3" src="images/r-3-3.jpg" alt="c">
-            <img class="_m" src="images/r-m-3.jpg" alt="c">
-            <a href="#">C room</a>
-        </article>
-        <article id="Dtype">
-            <img class="_1" src="images/r-4.jpg" alt="d">
-            <img class="_2" src="images/r-4-2.jpg" alt="d">
-            <img class="_3" src="images/r-4-3.jpg" alt="d">
-            <img class="_m" src="images/r-m-4.jpg" alt="d">
-            <a href="#">D room</a>
+        <article id="type">
+            <div class="room1">
+                <a href="#"><img src="images/r-1.jpg" alt="a"></a>
+                <a href="#" class="wow swing">A room</a>
+            </div>
+            <div class="room2">
+                <a href="#"><img src="images/r-2.jpg" alt="b"></a>
+                <a href="#" class="wow swing">B room</a>
+            </div>
+            <div class="room3">
+                <a href="#"><img src="images/r-3.jpg" alt="c"></a>
+                <a href="#" class="wow swing" data-wow-offset="200">C room</a>
+            </div>
+            <div class="room4">
+                <a href="#"><img src="images/r-4.jpg" alt="d"></a>
+                <a href="#" class="wow swing" data-wow-offset="200">D room</a>
+            </div>
         </article>
     </section>
 
@@ -88,50 +81,12 @@
         <p>Copyright&copy; 2018 STUDIO MOOHWA. All Rights Reverved.</p>
     </footer>
 
+    <script src="wow/wow.js"></script>
     <script>
-        const articles = document.querySelectorAll("#container>article");
-        articles.forEach(article => article.addEventListener("mousewheel", scrollIt));
-        //ie,crome용
-        articles.forEach(article => article.addEventListener("DOMMouseScroll", scrollIt));
-        //firefox용
+        new WOW().init();
+    </script>
 
-        function scrollIt(e){
-            e.preventDefault();
-            console.log(e);
-            let delta = e.wheelDelta;
-
-            if(!delta){
-                delta = e.detail*-40;
-            }
-
-            const artArr = Array.prototype.slice.call(articles);
-            let i = artArr.indexOf(this);
-            console.log(i)
-            if(delta<0){
-                let el;
-                (i<articles.length-1)?el = this.nextElementSibling : el = this;
-                
-                let elTop = window.pageYOffset + el.getBoundingClientRect().top;
-                
-                window.scrollTo({
-                    behavior:"smooth",
-                    left:0,
-                    top:elTop
-                });
-            }else if(delta>0){
-                let el;
-                (i>0)? el = this.previousElementSibling : el = this;
-                
-                let elTop = window.pageYOffset + el.getBoundingClientRect().top;
-                
-                window.scrollTo({
-                    behavior:"smooth",
-                    left:0,
-                    top:elTop
-                });
-            }
-        }
-
+    <script>
         const button = document.querySelector("#top");
         window.addEventListener("scroll",() => {
             let scroll = window.pageYOffset; 
