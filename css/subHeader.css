@@ -89,16 +89,13 @@ header>.nav{
     display:none;
     border-bottom-right-radius:20px;
     border-bottom-left-radius:20px;
+    overflow:hidden;
 }
 .sub>li{width:100%;}
 .sub>li>a{
     display:block;
     padding:15px 30px;
     line-height:30px;
-}
-.sub>li:nth-child(3)>a{
-    border-bottom-right-radius:20px;
-    border-bottom-left-radius:20px;
 }
 .sub>li>a:hover{
     background-color:#003333;
