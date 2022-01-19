@@ -1,6 +1,6 @@
 #container{
     width:100%;
-    height:100vh;
+    height:auto;
     user-select:none;
 }
 #type{
@@ -24,13 +24,18 @@
     transition:all 0.8s;
 }
 
-#type>div>a:last-child{
+#type>div>p:last-child{
     position:absolute;
-    top:20px;
+    top:40px;
     right:40px;
-    font-size:40px;
+    font-size:50px;
     font-weight:bold;
     color:#fff;
+    text-align:right;
+}
+#type>div>p:last-child>span{
+    font-size:20px;
+    font-weight:normal;
 }
 #type>div:nth-child(3),
 #type>div:nth-child(4){margin-bottom:60px;}
@@ -38,16 +43,8 @@
 footer{float:left;}
 /*============*/
 
-/*브라우저의 넓이가 980px 이하 일 때*/
-@media screen and (max-width:980px){
-    #type>div>a:last-child{font-size:34px;}
-}
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
-    #type>div>a:last-child{
-        right:30px;
-        font-size:26px;
-    }
     #type>div:nth-child(1),
     #type>div:nth-child(3){padding-right:10px;}
     #type>div:nth-child(2),
@@ -55,24 +52,34 @@ footer{float:left;}
     #type>div:nth-child(3),
     #type>div:nth-child(4){padding-top:0px;}
 
-    #type>div:nth-child(2)>a:last-child,
-    #type>div:nth-child(4)>a:last-child{right:40px;}
-    #type>div:nth-child(3)>a:last-child,
-    #type>div:nth-child(4)>a:last-child{
-        top:0px;
+    #type>div>p:last-child{
+        font-size:36px;
+        right:20px;
+    }
+    #type>div>p:last-child>span{
+        font-size:16px;
+    }
+    #type>div:nth-child(2)>p:last-child,
+    #type>div:nth-child(4)>p:last-child{
+        right:30px;
+    }
+    #type>div:nth-child(3)>p:last-child,
+    #type>div:nth-child(4)>p:last-child{
+        top:20px;
     }
 }
+
 /*브라우저의 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
     #container{height:100%;}
     #type{padding-top:120px;}
-    #type>div>a:last-child{
-        top:25px;
-        right:20px;
-        font-size:18px;
+    #type>div>p:last-child{
+        font-size:24px;
     }
+    #type>div>p:last-child>span{
+        font-size:11px;
+    }
+
     #type>div:nth-child(3),
-    #type>div:nth-child(4){margin-bottom:30px;}
-    #type>div:nth-child(2)>a:last-child,
-    #type>div:nth-child(4)>a:last-child{right:30px;}
+    #type>div:nth-child(4){margin-bottom:20px;}
 }
