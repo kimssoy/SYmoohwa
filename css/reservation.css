@@ -37,6 +37,16 @@ form{
     color:#003333;
     user-select:none;
 }
+form::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.box::after{
+    content:"";
+    display:block;
+    clear:both;
+}
 input{
     font-family:inherit;
     font-size:18px;
@@ -152,7 +162,7 @@ input::placeholder{
     height:100px;
     border:0;
     border:3px solid #003333;
-    margin:10px 0 60px 0;
+    margin:10px 0 40px 0;
     color:#999999;
     font-size:15px;
     font-family:inherit;
@@ -160,6 +170,22 @@ input::placeholder{
     padding-top:10px;
     border-radius:10px;
 }
+/*=================*/
+.txt{
+    width:100%;
+    text-align:center;
+}
+.txt>p{
+    font-size:13px;
+    font-weight:normal;
+    padding:0 20px;
+    margin-bottom:45px;
+    padding:20px;
+    color:#999;
+    border-radius:10px;
+    outline:2px solid #e7e7e7;
+}
+.txt>.p2{display:none;}
 /*=================*/
 form>input:last-child{
     float:left;
@@ -251,6 +277,9 @@ footer{float:left;}
     }
     .box6>label{margin-right:0;}
 
+    .txt>p{
+        font-size:12px;
+    }
     .textWrap{width:100%; padding:0 100px;}
     .textWrap>label{width:100%;}
     .textWrap textarea{width:100%;}
@@ -268,11 +297,17 @@ footer{float:left;}
     }
     input{font-size:16px;}
     .title>a,.title>p{font-size:12px;}
-    form>input:last-child{font-size:14px;}
+    form>input:last-child{
+        font-size:14px;
+        margin-bottom:50px;
+    }
     .box2>label{margin-right:10px;}
     .box4>label>span,.box5>label>span{font-size:12px;}
+    .txt>.p1{display:none;}
+    .txt>.p2{display:block;}
     .textWrap{padding:0 80px;}
     .textWrap>label{font-size:14px;}
+    .textWrap textarea{margin:10px 0 50px 0;}
 }
 
 /*브라우저의 넓이가 480px 이하 일 때*/
@@ -302,7 +337,9 @@ footer{float:left;}
     .box4 input,.box5 input{margin:10px 0px 30px 0px;}
     .box6 input{margin:14px 0px 30px 0px;}
     .box7 textarea{margin:10px 0 30px 0;}
-    form>input:last-child{margin-bottom:50px;}
+    .txt>p{
+        font-size:11px;
+    }
     .textWrap{padding:0 40px;}
-    .textWrap textarea{margin:10px 0 50px 0;}
+    .textWrap textarea{font-size:11px;}
 }

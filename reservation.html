@@ -56,7 +56,7 @@
         <p>&#042; 필수작성항목</p>
     </div>
     <form action="#">
-        <div class="box1">
+        <div class="box box1">
             <label>
                 예약자명(업체명) &#042;
             <input type="text" required>
@@ -70,7 +70,7 @@
             <input type="text">
             </label>
         </div>
-        <div class="box2">
+        <div class="box box2">
             <label>
                 예약룸을 선택해주세요 &#042;
             </label>
@@ -85,7 +85,7 @@
             <input type="radio" required id="전관" name="roomType" value="전관">
             <label for="전관">전관</label>
         </div>
-        <div class="box3">
+        <div class="box box3">
             <label>
                 예약일 &#042;
             <input type="date" required name="date">
@@ -155,19 +155,19 @@
             <input type="text" required placeholder="ex) 1명">
             </label>
         </div>
-        <div class="box4">
+        <div class="box box4">
             <label>
                 촬영내용 &#042; <span>(매거진, 화보, 광고 및 영상촬영의 경우 유선으로 별도 문의 부탁드립니다.)</span>
             <input type="text" required placeholder="ex) 개인, 쇼핑몰, 화보, 영상 등">
             </label>
         </div>
-        <div class="box5">
+        <div class="box box5">
             <label>
                 장비 렌탈 요청 <span>(포멕스 E600, 소프트박스, 유무선 동조기, 리플렉터, 반사판, 블루투스 스피커, 드라이기, 고데기, 스팀다리미)</span>
             <input type="text">
             </label>
         </div>
-        <div class="box6">
+        <div class="box box6">
             <label>
                 입금자명 &#042;
             <input type="text" required>
@@ -181,12 +181,27 @@
             <input type="text" placeholder="룸별 1대 무료주차 가능합니다.">
             </label>
         </div>
-        <div class="box7">
+        <div class="box box7">
             <label>
                 요청사항
             <textarea spellcheck="false"></textarea>
             </label>
         </div>
+
+        <div class="txt">
+            <p class="p1">&#042; 예약 5일전 취소 시 촬영 전액의 <span style="color:#333">30%</span>, 3일전 취소 시 촬영 전액의 <span style="color:#333">50%</span>,<br>
+            24시간 전 취소 시 촬영 전액의 <span style="color:#333">80%</span>, 촬영 당일 취소 시 촬영 전액의 <span style="color:#333">100%</span>,<br>
+            위약금으로 발생합니다.<br>
+            단, 총 비용 10만원 이하일 경우 예약금을 위약금으로 합니다.</p>
+            <p class="p2">&#042; 예약 5일전 취소 시 촬영 전액의 <span style="color:#333">30%</span>,<br>
+            3일전 취소 시 촬영 전액의 <span style="color:#333">50%</span>,<br>
+            24시간 전 취소 시 촬영 전액의 <span style="color:#333">80%</span>,<br>
+            촬영 당일 취소 시 촬영 전액의 <span style="color:#333">100%</span>,<br>
+            위약금으로 발생합니다.<br>
+            단, 총 비용 10만원 이하일 경우<br>
+            예약금을 위약금으로 합니다.</p>
+        </div>
+
         <input class="addBtn" type="submit" value="예약하기">
     </form>
 
