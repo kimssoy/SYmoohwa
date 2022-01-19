@@ -184,6 +184,7 @@ input::placeholder{
     color:#999;
     border-radius:10px;
     outline:2px solid #e7e7e7;
+    line-height:1.6;
 }
 .txt>.p2{display:none;}
 /*=================*/
@@ -305,9 +306,15 @@ footer{float:left;}
     .box4>label>span,.box5>label>span{font-size:12px;}
     .txt>.p1{display:none;}
     .txt>.p2{display:block;}
+    .txt>p{
+        font-size:11px;
+    }
     .textWrap{padding:0 80px;}
     .textWrap>label{font-size:14px;}
-    .textWrap textarea{margin:10px 0 50px 0;}
+    .textWrap textarea{
+        margin:10px 0 50px 0;
+        font-size:11px;
+    }
 }
 
 /*브라우저의 넓이가 480px 이하 일 때*/
@@ -337,9 +344,5 @@ footer{float:left;}
     .box4 input,.box5 input{margin:10px 0px 30px 0px;}
     .box6 input{margin:14px 0px 30px 0px;}
     .box7 textarea{margin:10px 0 30px 0;}
-    .txt>p{
-        font-size:11px;
-    }
     .textWrap{padding:0 40px;}
-    .textWrap textarea{font-size:11px;}
 }
