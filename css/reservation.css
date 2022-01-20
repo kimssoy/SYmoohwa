@@ -50,15 +50,17 @@ form::after{
 input{
     font-family:inherit;
     font-size:16px;
-    text-indent:10px;
+    text-indent:20px;
     outline:0;
     letter-spacing:2px;
+    line-height:30px;
 }
 input::placeholder{
     font-size:13px;
     text-align:left;
 }
 select{outline:0;}
+
 .box1>label{
     width:220px;
     float:left;
@@ -70,6 +72,8 @@ select{outline:0;}
     border:0;
     border-bottom:3px solid #003333;
     margin:14px 0 60px 0;
+    text-align:center;
+    text-indent:0;
 }
 /*============*/
 .box2>label{margin-right:30px; width:100%; cursor:pointer;}
@@ -88,7 +92,7 @@ select{outline:0;}
     float:left;
     margin:60px 38px 60px 0;
 }
-.box3 input{border-radius:10px;}
+.box3 input{border-radius:10px; text-indent:6px;}
 .box3>.wrap{
     width:248px;
     float:left;
@@ -100,9 +104,9 @@ select{outline:0;}
 }
 .box3>.wrap>label:nth-child(2){padding-left:4px;}
 .box3>label:last-child{margin-right:0;}
+.box3>label:last-child>input{text-indent:20px;}
 .box3>label:last-child>input::placeholder{
-    text-align:left;
-    text-indent:10px;
+    text-indent:20px;
 }
 .box3 input{
     width:100%;
@@ -145,12 +149,17 @@ select{outline:0;}
     float:left;
     margin-right:80px;
 }
+.box6>label:nth-child(2)>input::placeholder{
+    text-align:center;
+}
 .box6>label:last-child{margin:0;}
 .box6 input{
     width:100%;
     border:0;
     border-bottom:3px solid #003333;
     margin:14px 0 60px 0;
+    text-align:center;
+    text-indent:0;
 }
 /*================*/
 .box7>label{
@@ -165,7 +174,7 @@ select{outline:0;}
     margin:10px 0 40px 0;
     font-size:16px;
     font-family:inherit;
-    text-indent:10px;
+    text-indent:20px;
     padding-top:10px;
     border-radius:10px;
 }
@@ -247,7 +256,7 @@ footer{float:left;}
         width:100%;
         margin:0;
     }
-
+    .box1 input{text-align:left; text-indent:20px;}
     .box2>label{
         width:100%;
         margin-right:20px;
@@ -276,6 +285,7 @@ footer{float:left;}
         width:100%;
     }
     .box6>label{margin-right:0;}
+    .box6>label>input{text-align:left; text-indent:20px;}
 
     .txt>p{
         font-size:12px;
