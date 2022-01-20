@@ -230,7 +230,7 @@ section{
         padding-top:10px;
     }
     #guide_2 .box>a:hover+h3{
-        text-underline-offset:2px;
+        text-underline-offset:3px;
     }
     #guide_2 .scrollBar{
         display:none;
@@ -300,13 +300,13 @@ section{
     #guide_2 .box img{width:220px; height:270px;}
     #guide_2 .box>h3{
         width:120px;
-        height:40px;
-        bottom:31%;
+        height:50px;
+        bottom:30%;
         left:90px;
-        font-size:16px;
-        line-height:40px;
+        font-size:17px;
+        line-height:50px;
         text-decoration:underline;
-        text-underline-offset:2px;
+        text-underline-offset:3px;
         text-decoration-thickness:2px;
         text-decoration-color:#e89973;
         text-decoration-style:wavy;
