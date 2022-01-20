@@ -41,7 +41,7 @@ header{
     color:#fff;
 }
 header>.nav{
-    max-width:100%;
+    width:100%;
     line-height:100px;
     margin:auto;
     display:flex;
@@ -157,4 +157,10 @@ header>.nav{
         font-size:30px;
         padding:5px 8px 3px 8px;
     }
+}
+
+/*브라우저의 넓이가 332px 이하 일 때*/
+@media screen and (max-width:332px){
+    .toggle{font-size:25px; top:30px;}
+    .logo>a{font-size:16px;}
 }

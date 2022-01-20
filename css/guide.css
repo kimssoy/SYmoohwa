@@ -24,6 +24,7 @@ section{
 #guide_1>.textWrap>p:nth-child(2){
     line-height:32px;
     padding-bottom:40px;
+    font-weight:500;
 }
 
 #guide_1>.textWrap>h3{
@@ -43,13 +44,15 @@ section{
     font-size:14px;
     line-height:24px;
     padding-bottom:100px;
+    color:#999;
 }
 #guide_1>.textWrap>p:nth-child(5)>span{
     color:#e89973;
 }
 
 #guide_1>.textWrap>.g_p2{display:none;}
-#guide_1>.textWrap>.p2{display:none;}
+#guide_1>.textWrap>.p2,
+#guide_1>.textWrap>.p3{display:none;}
 /*====================*/
 #guide_2>h2{
     padding:80px 0 50px 0;
@@ -129,7 +132,8 @@ section{
 }
 #guide_2>.textWrap_2>p>span{color:#e89973;}
 
-#guide_2>.textWrap_2>.p2{display:none;}
+#guide_2>.textWrap_2>.p2,
+#guide_2>.textWrap_2>.p3{display:none;}
 /*================*/
 #guide_3>h2{padding-bottom:40px;}
 #guide_3>h2:first-child{
@@ -145,7 +149,7 @@ section{
 #guide_3>p:nth-child(8){
     padding-bottom:80px;
 }
-#guide_3>.p2{display:none;}
+#guide_3>.p2,#guide_3>.p3{display:none;}
 /*========================*/
 
 /*브라우저의 넓이가 768px 이하 일 때*/
@@ -173,6 +177,7 @@ section{
         font-size:12px;
         padding-bottom:80px;
         line-height:23px;
+        color:#999;
     }
     #guide_1>.textWrap>p:nth-child(6)>span{
         color:#e89973;
@@ -257,6 +262,7 @@ section{
     #guide_1>.textWrap>p:nth-child(3){
         line-height:28px;
         padding-bottom:20px;
+        font-weight:500;
     }
     #guide_1>.textWrap>p:nth-child(6){
         font-size:11px;
@@ -279,32 +285,32 @@ section{
         line-height:24px;
     }
     #guide_2>.sliderWrap{
-        max-width:300px;
+        max-width:280px;
         height:100%;
         margin:auto;
     }
     #guide_2 .contentWrap{
-        max-width:300px;
+        max-width:280px;
         height:100%;
     }
     #guide_2 .box{
-        width:300px;
+        width:280px;
         height:480px;
         background-color:#f1f1f1;
         float:left;
         margin-right:0;
         position:relative;
-        padding:40px;
+        padding:30px;
         border-bottom:2px solid #ccc;
     }
     #guide_2 .box img{width:220px; height:270px;}
     #guide_2 .box>h3{
-        width:120px;
+        width:130px;
         height:50px;
-        bottom:30%;
-        left:90px;
+        bottom:32%;
+        left:75px;
         font-size:17px;
-        line-height:50px;
+        line-height:47px;
         text-decoration:underline;
         text-underline-offset:3px;
         text-decoration-thickness:2px;
@@ -313,7 +319,7 @@ section{
     }
     #guide_2 .box>p{
         font-size:15px;
-        padding-top:30px;
+        padding-top:37px;
         line-height:24px;
     }
     #guide_2 .box>p>span{
@@ -341,4 +347,66 @@ section{
 
     #guide_3>.p1{display:none;}
     #guide_3>.p2{display:block;}
+}
+
+/*브라우저의 넓이가 332px 이하 일 때*/
+@media screen and (max-width:332px){
+    h2{font-size:18px;}
+    #guide_1>.textWrap{padding:0;}
+    #guide_1>.textWrap>p{font-size:11px;}
+    #guide_1>.textWrap>h3{
+        font-size:10px;
+    }
+    #guide_1>.textWrap>p:nth-child(7){
+        font-size:11px;
+        line-height:22px;
+        padding-bottom:50px;
+        color:#999;
+    }
+    #guide_1>.textWrap>p:nth-child(7)>span{
+        color:#e89973;
+    }
+    #guide_1>.textWrap>.p3{display:block;}
+    #guide_1>.textWrap>.p2{display:none;}
+
+    #guide_2>.sliderWrap{
+        max-width:220px;
+    }
+    #guide_2 .contentWrap{
+        max-width:220px;
+    }
+    #guide_2 .box{
+        width:220px;
+        height:400px;
+        padding:20px;
+    }
+    #guide_2 .box img{width:180px; height:220px;}
+    #guide_2 .box>h3{
+        width:100px;
+        height:40px;
+        bottom:35%;
+        left:65px;
+        font-size:15px;
+        line-height:37px;
+    }
+    #guide_2 .box>p{
+        padding-top:25px;
+        font-size:12px;
+    }
+    #guide_2 .box>p>span{
+        font-size:10px;
+    }
+    #guide_2 .box>p:last-child{
+        font-size:10px;
+    }
+
+    #guide_2>.textWrap_2>.p2{display:none;}
+    #guide_2>.textWrap_2>.p3{display:block;}
+    #guide_2>.textWrap_2>.p3{font-size:11px;}
+
+    #guide_3>.p2{display:none;}
+    #guide_3>.p3{display:block;}
+    #guide_3>p{
+        font-size:11px;
+    }
 }

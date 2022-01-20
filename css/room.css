@@ -83,3 +83,16 @@ footer{float:left;}
     #type>div:nth-child(3),
     #type>div:nth-child(4){margin-bottom:20px;}
 }
+
+/*브라우저의 넓이가 400px 이하 일 때*/
+@media screen and (max-width:400px){
+    #type>div>p:last-child{
+        font-size:20px;
+    }
+    #type>div>p:last-child>span{
+        font-size:10px;
+    }
+
+    #type>div:nth-child(3),
+    #type>div:nth-child(4){margin-bottom:20px;}
+}
