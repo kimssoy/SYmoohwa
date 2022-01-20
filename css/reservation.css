@@ -285,6 +285,9 @@ footer{float:left;}
         width:100%;
     }
     .box6>label{margin-right:0;}
+    .box6>label:nth-child(2)>input::placeholder{
+        text-align:left;
+    }
     .box6>label>input{text-align:left; text-indent:20px;}
 
     .txt>p{
