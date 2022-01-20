@@ -236,7 +236,11 @@ section{
         display:none;
     }
     
-    #guide_3>p{font-size:14px; line-height:24px;}
+    #guide_3>p{
+        font-size:14px;
+        line-height:24px;
+        margin:0 20px;
+    }
 }
 
 /*브라우저의 넓이가 480px 이하 일 때*/
@@ -247,7 +251,7 @@ section{
     #guide_1>.textWrap>.g_p2{display:block;}
 
     #guide_1>.textWrap>h2{
-        padding:140px 0 30px 0;
+        padding:150px 0 30px 0;
     }
     #guide_1>.textWrap>p{font-size:13px;}
     #guide_1>.textWrap>p:nth-child(3){
@@ -321,12 +325,12 @@ section{
         padding-top:10px;
     }
 
+    #guide_3>h2{padding-bottom:30px;}
     #guide_3>h2:first-child{
-        padding:50px 0 40px 0;
+        padding:50px 0 30px 0;
     }
     #guide_3>p{
         font-size:12px;
-        padding:0 20px;
     }
     #guide_3>p:not(:last-child){
         padding-bottom:50px;
