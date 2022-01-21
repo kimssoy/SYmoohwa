@@ -157,7 +157,7 @@ section{
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
     h2{
-        font-size:28px;
+        font-size:26px;
     }
 
     #guide_1>.textWrap>.p1{display:none;}
@@ -262,7 +262,7 @@ section{
 
 /*브라우저의 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
-    h2{font-size:25px;}
+    h2{font-size:22px;}
 
     #guide_1>.textWrap>.g_p1{display:none;}
     #guide_1>.textWrap>.g_p2{display:block;}

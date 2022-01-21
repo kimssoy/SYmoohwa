@@ -23,6 +23,7 @@
     text-decoration-skip-ink:none;
     text-underline-offset:6px;
     font-size:25px;
+    font-weight:500;
     color:#e89973;
 }
 #map{
@@ -59,7 +60,7 @@
     float:left;
     background-color:#e89973;
     color:#fff;
-    padding:10px 20px;
+    padding:15px 20px;
     border-radius:5px;
     font-size:14px;
 }
@@ -80,10 +81,12 @@
 
 #wrap>h3{
     font-size:15px;
+    font-weight:500;
     padding-bottom:10px;
 }
 #wrap h1{
     font-size:20px;
+    font-weight:500;
     color:#e89973;
 }
 #wrap>.h1_2{display:none;}
@@ -158,7 +161,7 @@ hr:last-child{margin-bottom:80px;}
     #map>div iframe{padding:30px 30px 20px 30px;}
     #btn{padding:0 30px;}
     #btn>a{
-        padding:8px 15px;
+        padding:12px 15px;
         border-radius:5px;
         font-size:13px;
     }
@@ -190,24 +193,20 @@ hr:last-child{margin-bottom:80px;}
     hr:last-child{margin-bottom:50px;}
 
     #locationWrap{padding-top:150px;}
-    #title>h1{padding-right:20px; font-size:20px;}
-    #map>div iframe{padding:20px 20px 10px 20px;}
-    #btn{padding:0 20px;}
+    #title>h1{font-size:20px;}
     #btn>a{
-        padding:8px 10px;
+        padding:12px 10px;
         border-radius:5px;
         font-size:11px;
     }
     
-    #wrap{padding:20px 20px 40px 20px;}
-    #wrap>h3{font-size:11px;}
-    #wrap h1{font-size:12px;}
+    #wrap>h3{font-size:13px;}
+    #wrap h1{font-size:15px;}
 
-    .box{padding:0 20px;}
-    .box h2{font-size:14px;}
-    .box h3{font-size:12px;}
-    .box p{font-size:12px;}
-    .box p>span{font-size:12px;}
+    .box h2{font-size:15px;}
+    .box h3{font-size:14px;}
+    .box p{font-size:14px;}
+    .box p>span{font-size:14px;}
 
     .box1>.h3_1{display:none;}
     .box1>.h3_2{display:block;}
@@ -218,8 +217,28 @@ hr:last-child{margin-bottom:80px;}
     .box4>.c_1{width:100%;}
     .box4>.c_2{width:100%;}
     .box4>.c_1>p{text-align:right;}
+    .box4>.c_1>p:nth-child(2){font-size:14px;}
+    .box4>.c_2>p:nth-child(4){font-size:14px;}
+    .box4>.c_2>p{text-align:right;}
+    .box4>.c_2>h2{padding:30px 0 20px 0;}
+}
+
+/*브라우저의 넓이가 322px 이하 일 때*/
+@media screen and (max-width:322px){
+    #title>h1{font-size:18px;}
+    #btn>a{
+        padding:10px 8px;
+        font-size:11px;
+    }
+    #wrap>h3{font-size:14px;}
+    #wrap h1{font-size:11px;}
+    .box h2{font-size:13px;}
+    .box h3{font-size:12px;}
+    .box p{font-size:12px;}
+    .box p>span{font-size:12px;}
     .box4>.c_1>p:nth-child(2){font-size:12px;}
     .box4>.c_2>p:nth-child(4){font-size:12px;}
-    .box4>.c_2>h2{padding:30px 0 20px 0;}
-    .box4>.c_2>p{text-align:right;}
+    .box4>.c_1>p:nth-child(2){padding-bottom:5px;}
+    .box4>.c_2>p:nth-child(2),
+    .box4>.c_2>p:nth-child(3){padding-bottom:5px;}
 }
