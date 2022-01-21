@@ -40,7 +40,7 @@ $(function(){
             $(".gnb").css("display","flex");
         }else{
             $(".gnb").css("display","none");
-            $(".gnb>li>a").click(function(e){
+            $(".gnb>.gnb_n>a").click(function(e){
                 e.preventDefault();
             });
         }
