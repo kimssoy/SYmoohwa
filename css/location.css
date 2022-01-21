@@ -90,7 +90,7 @@ hr:not(:first-child){margin-top:40px;}
     padding:0 40px;
 }
 .box h2{
-    font-size:18px;
+    font-size:17px;
     font-weight:600;
     padding-bottom:20px;
 }
@@ -180,7 +180,7 @@ hr:not(:first-child){margin-top:40px;}
 
 /*브라우저의 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
-    #locationWrap{padding-top:150px;}
+    #locationWrap{padding-top:140px;}
     #title>h1{padding-right:20px; font-size:20px;}
     #map>div iframe{padding:20px 20px 10px 20px;}
     #btn{padding:0 20px;}
@@ -195,10 +195,10 @@ hr:not(:first-child){margin-top:40px;}
     #wrap h1{font-size:12px;}
 
     .box{padding:0 20px;}
-    .box h2{font-size:12px;}
-    .box h3{font-size:11px;}
-    .box p{font-size:11px;}
-    .box p>span{font-size:11px;}
+    .box h2{font-size:14px;}
+    .box h3{font-size:12px;}
+    .box p{font-size:12px;}
+    .box p>span{font-size:12px;}
 
     .box1>.h3_1{display:none;}
     .box1>.h3_2{display:block;}
@@ -209,8 +209,8 @@ hr:not(:first-child){margin-top:40px;}
     .box4>.c_1{width:100%;}
     .box4>.c_2{width:100%;}
     .box4>.c_1>p{text-align:right;}
-    .box4>.c_1>p:nth-child(2){font-size:11px;}
-    .box4>.c_2>p:nth-child(4){font-size:11px;}
+    .box4>.c_1>p:nth-child(2){font-size:12px;}
+    .box4>.c_2>p:nth-child(4){font-size:12px;}
     .box4>.c_2>h2{padding:30px 0 20px 0;}
     .box4>.c_2>p{text-align:right;}
 }
