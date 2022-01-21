@@ -8,6 +8,11 @@
     margin:auto;
     padding-top:160px;
 }
+#type::after{
+    content:"";
+    display:block;
+    clear:both;
+}
 #type>div{
     float:left;
     width:50%;
@@ -40,7 +45,6 @@
 #type>div:nth-child(3),
 #type>div:nth-child(4){margin-bottom:60px;}
 
-footer{float:left;}
 /*============*/
 
 /*브라우저의 넓이가 768px 이하 일 때*/

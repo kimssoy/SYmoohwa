@@ -10,14 +10,10 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <!--폰트어썸-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <!--와우플러그인-->
-    <link href="wow/animate.css" rel="stylesheet">
-
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/subHeader.css" rel="stylesheet">
-    <link href="css/room.css" rel="stylesheet">
+    <link href="css/location.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
@@ -54,26 +50,67 @@
         </div>
     </header>
 
-    <section id="container">
-        <article id="type">
-            <div class="room1">
-                <a href="#"><img src="images/r-1.jpg" alt="a"></a>
-                <p class="wow fadeIn" data-wow-duration="1.5s">A room<br><span>1시간 60,000원</span></p>
+    <div id="locationWrap">
+        <div id="title">
+            <h1>오시는길</h1>
+        </div>
+        <div id="map">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8203751686196!2d126.9095775509948!3d37.559295579700105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98df5d4c9719%3A0x15bdc46afa6501df!2z7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDshLHrr7jsgrDroZw37JWI6ri4IDEy!5e0!3m2!1sko!2skr!4v1642667106610!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="room2">
-                <a href="#"><img src="images/r-2.jpg" alt="b"></a>
-                <p class="wow fadeIn" data-wow-duration="1.5s">B room<br><span>1시간 60,000원</span></p>
+        </div>
+
+        <div id="btn">
+            <a href="#"><i class="fas fa-map-signs"></i>길찾기</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>지도에서보기</a>
+        </div>
+        <div id="wrap">
+            <h3>Studio Moohwa</h3>
+            <h1 class="h1_1">서울특별시 마포구 성미산로7안길 12 (성산동 246-3)</h1>
+            <h1 class="h1_2">서울특별시 마포구 성미산로7안길 12<br>
+                (성산동 246-3)
+        </div>
+
+        <hr>
+        <div class="box box1">
+            <h2><i class="fas fa-map-marker-alt"></i> 오시는길</h2>
+            <h3 class="h3_1">6호선 망원역 1번 출구 도보 8분 거리</h3>
+            <h3 class="h3_2">6호선 망원역 1번 출구<br>
+                도보 8분 거리</h3>
+            <p class="p_1"><span>주차정보</span> 주차는 룸별 1대 무료주차 가능합니다.<br>그 외 차량은 인근 공영주차장을 이용해 주세요.</p>
+            <p class="p_2"><span>주차정보</span> 룸별 1대 무료주차 가능<br>그 외 차량은 인근 공영주차장 이용</p>
+        </div>
+        <hr>
+        <div class="box box2">
+            <h2><i class="fas fa-mobile-alt"></i> 전화번호</h2>
+            <h3>010-9628-2463</h3>
+        </div>
+        <hr>
+        <div class="box box3">
+            <h2><i class="fas fa-info-circle"></i> 이용안내</h2>
+            <p><i class="far fa-calendar-check"></i>예약</p>
+            <p><i class="fas fa-users"></i>단체</p>
+            <p><i class="fas fa-wifi"></i>무선인터넷</p>
+            <p><i class="fas fa-parking"></i>주차</p>
+        </div>
+        <hr>
+        <div class="box box4">
+            <div class="c_1">
+                <h2><i class="fas fa-user-tie"></i> 사업자정보</h2>
+                <p><span>상호명</span> STUDIO MOOHWA</p>
+                <p><span>대표자</span> YURA SEO</p>
             </div>
-            <div class="room3">
-                <a href="#"><img src="images/r-3.jpg" alt="c"></a>
-                <p class="wow fadeIn" data-wow-duration="1.5s">C room<br><span>1시간 50,000원</span></p>
+            <div class="c_2">
+                <h2><i class="fas fa-money-check"></i> 입금계좌</h2>
+                <p><span>예금주</span> 스튜디오무화</p>
+                <p><span>입금은행</span> 국민은행</p>
+                <p><span>계좌번호</span> 054901-04-218898</p>
             </div>
-            <div class="room4">
-                <a href="#"><img src="images/r-4.jpg" alt="d"></a>
-                <p class="wow fadeIn" data-wow-duration="1.5s">D room<br><span>1시간 60,000원</span></p>
-            </div>
-        </article>
-    </section>
+        </div>
+        <hr>
+
+
+    </div>
 
     <footer>
         <p>Company. <span>STUDIO MOOHWA</span></p>
@@ -83,11 +120,6 @@
         <p>E-mail. <span><a href="#">moohwa1@naver.com</a></span></p><br>
         <p>Copyright&copy; 2018 STUDIO MOOHWA. All Rights Reverved.</p>
     </footer>
-
-    <script src="wow/wow.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 
     <script>
         const button = document.querySelector("#top");
@@ -124,5 +156,4 @@
         })
     </script>
 </body>
-
 </html>
