@@ -129,6 +129,7 @@ section{
 #guide_2>.textWrap_2>p{
     line-height:28px;
     padding-bottom:80px;
+    font-size:15px;
 }
 #guide_2>.textWrap_2>p>span{color:#e89973;}
 
@@ -141,12 +142,13 @@ section{
 }
 #guide_3>p{
     line-height:28px;
+    font-size:15px;
 }
 #guide_3 p span{color:#e89973;}
 #guide_3>p{
     padding-bottom:60px;
 }
-#guide_3>p:nth-child(8){
+#guide_3>p:nth-child(10){
     padding-bottom:80px;
 }
 #guide_3>.p2,#guide_3>.p3{display:none;}
@@ -175,7 +177,7 @@ section{
     }
     #guide_1>.textWrap>p:nth-child(6){
         font-size:12px;
-        padding-bottom:80px;
+        padding-bottom:60px;
         line-height:23px;
         color:#999;
     }
@@ -183,10 +185,13 @@ section{
         color:#e89973;
     }
 
+    #guide_2>h2{
+        padding:60px 0 40px 0;
+    }
     #guide_2>.textWrap_2>.p1{display:none;}
     #guide_2>.textWrap_2>.p2{display:block;}
     #guide_2>.textWrap_2{padding:0 20px;}
-    #guide_2>.textWrap_2>p{font-size:14px;}
+    #guide_2>.textWrap_2>p{font-size:14px; padding-bottom:60px;}
     #guide_2>.textWrap_2>i{
         font-size:40px;
         padding:40px 0 20px 0;
@@ -241,10 +246,17 @@ section{
         display:none;
     }
     
+    #guide_3>h2{padding-bottom:30px;}
+    #guide_3>h2:first-child{
+        padding:60px 0 30px 0;
+    }
     #guide_3>p{
         font-size:14px;
         line-height:24px;
         margin:0 20px;
+    }
+    #guide_3>p:nth-child(10){
+        padding-bottom:60px;
     }
 }
 
@@ -275,7 +287,7 @@ section{
         padding-bottom:20px;
     }
     #guide_2>h2{
-        padding:50px 0 40px 0;
+        padding:50px 0 30px 0;
     }
     
     #guide_2>.textWrap_2>i{padding:30px 0 20px 0;}

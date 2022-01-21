@@ -4,7 +4,7 @@
     user-select:none;
 }
 .title>h2{
-    padding:160px 0 14px 0;
+    padding:180px 0 14px 0;
     font-family:'Permanent Marker';
     font-size:30px;
     font-weight:normal;
@@ -206,7 +206,7 @@ form>input:last-child{
     background-color:#003333;
     color:#fff;
     display:block;
-    margin-bottom:100px;
+    margin-bottom:80px;
     border-radius:10px;
 }
 form>input:last-child:hover{
@@ -303,7 +303,7 @@ form>input:last-child:hover{
 
 /*브라우저의 넓이가 768px 이하 일 때*/
 @media screen and (max-width:768px){
-    .title>h2{font-size:28px;}
+    .title>h2{padding:160px 0 14px 0; font-size:28px;}
     .title>p{
         padding:20px 80px 0 0;
     }
@@ -314,7 +314,7 @@ form>input:last-child:hover{
     .title>a,.title>p{font-size:12px;}
     form>input:last-child{
         font-size:14px;
-        margin-bottom:50px;
+        margin-bottom:60px;
     }
     .box2>label{margin-right:10px;}
     .box4>label>span,.box5>label>span{font-size:12px;}
@@ -326,7 +326,7 @@ form>input:last-child:hover{
     .textWrap{padding:0 80px;}
     .textWrap>label{font-size:14px;}
     .textWrap textarea{
-        margin:10px 0 50px 0;
+        margin:10px 0 60px 0;
         font-size:11px;
     }
 }
@@ -335,7 +335,7 @@ form>input:last-child:hover{
 @media screen and (max-width:480px){
     .title>h2{
         font-size:25px;
-        padding:140px 0 10px 0;
+        padding:150px 0 10px 0;
     }
     .title>a{
         font-size:11px;
@@ -346,6 +346,9 @@ form>input:last-child:hover{
     }
     form{
         padding:40px 40px 0 40px;
+    }
+    form>input:last-child{
+        margin-bottom:50px;
     }
     .box1 input{
         margin:14px 0 30px 0;
@@ -359,6 +362,9 @@ form>input:last-child:hover{
     .box6 input{margin:14px 0px 30px 0px;}
     .box7 textarea{margin:10px 0 30px 0;}
     .textWrap{padding:0 40px;}
+    .textWrap textarea{
+        margin:10px 0 50px 0;
+    }
 }
 
 /*브라우저의 넓이가 362px 이하 일 때*/

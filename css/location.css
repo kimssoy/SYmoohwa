@@ -85,6 +85,7 @@
 /*================================*/
 hr{margin-bottom:40px; border:0; border:1px solid #f1f1f1;}
 hr:not(:first-child){margin-top:40px;}
+hr:last-child{margin-bottom:80px;}
 .box{
     max-width:820px;
     padding:0 40px;
@@ -165,6 +166,7 @@ hr:not(:first-child){margin-top:40px;}
 
     hr{margin-bottom:30px;}
     hr:not(:first-child){margin-top:30px;}
+    hr:last-child{margin-bottom:60px;}
 
     .box{padding:0 30px;}
     .box h2{font-size:16px;}
@@ -180,7 +182,9 @@ hr:not(:first-child){margin-top:40px;}
 
 /*브라우저의 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
-    #locationWrap{padding-top:140px;}
+    hr:last-child{margin-bottom:50px;}
+
+    #locationWrap{padding-top:150px;}
     #title>h1{padding-right:20px; font-size:20px;}
     #map>div iframe{padding:20px 20px 10px 20px;}
     #btn{padding:0 20px;}
