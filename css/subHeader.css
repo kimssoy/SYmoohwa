@@ -100,7 +100,7 @@ header>.nav{
 .sub>li>a:hover{
     background-color:#003333;
     color:#fff;
-    transition:all 0.5s;
+    transition:all 0.3s;
 }
 /*=================*/
 

@@ -1,9 +1,9 @@
 $(function(){
     $(".gnb>li").mouseover(function(){
-        $(this).find(".sub").stop().slideDown("slow");
+        $(this).find(".sub").stop().slideDown();
     });
     $(".gnb>li").mouseout(function(){
-        $(this).find(".sub").stop().slideUp("slow");
+        $(this).find(".sub").stop().slideUp();
     });
 
     $(".toggle").click(function(){
