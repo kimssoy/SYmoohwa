@@ -50,7 +50,7 @@ header>.nav{
 }
 .logo>a{
     display:block;
-    font-size:24px;
+    font-size:22px;
     font-family:'Permanent Marker';
     margin-left:20px;
 }
@@ -152,6 +152,7 @@ header>.nav{
 
 /*브라우저의 넓이가 480px 이하 일 때*/
 @media screen and (max-width:480px){
+    .logo>a{font-size:18px;}
     #top{
         right:20px;
         font-size:30px;
